@@ -8,7 +8,6 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
 
 public class CustomApiTest {
-    HashMap<Integer, String> metin = new HashMap<>();
 
     @BeforeClass
     public static void data(){
@@ -32,7 +31,7 @@ public class CustomApiTest {
             .get("/users/1")
             .then()
             .statusCode(200)
-            .body("name",equalTo("Leanne Graham"))
+            .body("name",equalTo("Mesude İpek"))
             .time(lessThan(2000L));
     }
 
